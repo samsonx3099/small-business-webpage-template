@@ -1,19 +1,24 @@
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#site-nav');
-
 if (menuButton && navigation) {
   menuButton.addEventListener('click', () => {
-    const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
-    menuButton.setAttribute('aria-expanded', String(!isOpen));
-    navigation.classList.toggle('is-open', !isOpen);
-  });
-
-  navigation.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      menuButton.setAttribute('aria-expanded', 'false');
-      navigation.classList.remove('is-open');
-    });
+    const open = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!open));
+    navigation.classList.toggle('is-open', !open);
   });
 }
+const year = document.querySelector('#year');
+if (year) year.textContent = new Date().getFullYear();
 
-document.querySelector('#year').textContent = new Date().getFullYear();
+// Read customization values passed by the builder in the URL.
+window.ClientData = {
+  all() {
+    const params = new URLSearchParams(window.location.search);
+    const read = (key, fallback = '') => params.get(key) || fallback;
+    return {
+      name: read('name'), tagline: read('tagline'), description: read('description'),
+      phone: read('phone'), email: read('email'), address: read('address'),
+      hours: read('hours'), extra: read('extra')
+    };
+  }
+};
