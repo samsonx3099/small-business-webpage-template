@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Small Business Website Templates - Restaurant, Retail, Tradesman">
+  <title>Website Templates | Small Business Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #20302a;
+      --muted: #64706a;
+      --cream: #f7f4ee;
+      --paper: #fffdf9;
+      --sage: #cfdccf;
+      --green: #315643;
+      --gold: #d59c55;
+      --border: #dfe5de;
+      --heading: "Playfair Display", Georgia, serif;
+      --body: "DM Sans", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font: 16px/1.65 var(--body); }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, calc(100% - 48px)); margin: auto; }
+    .site-header { position: sticky; top: 0; z-index: 5; background: rgba(255,253,249,.94); border-bottom: 1px solid var(--border); backdrop-filter: blur(12px); }
+    .nav-wrap { display: flex; align-items: center; justify-content: space-between; min-height: 76px; gap: 2rem; }
+    .logo { display: flex; align-items: center; gap: .65rem; font-weight: 700; letter-spacing: -.02em; }
+    .logo-mark { display: grid; place-items: center; width: 32px; height: 32px; border: 2px solid var(--green); border-radius: 50%; color: var(--green); font: 700 18px var(--heading); }
+    .site-nav { display: flex; align-items: center; gap: 2rem; font-size: .92rem; font-weight: 600; }
+    .site-nav a:hover, .text-link:hover { color: var(--gold); }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; padding: .85rem 1.3rem; border: 0; border-radius: 3px; background: var(--green); color: white; cursor: pointer; font: 600 .92rem var(--body); transition: transform .2s, background .2s; }
+    .button:hover { background: #213f30; transform: translateY(-2px); }
+    .hero { padding: 7rem 0 6rem; background: var(--cream); }
+    .hero-content { display: flex; flex-direction: column; gap: 2rem; }
+    .eyebrow { margin: 0 0 1.2rem; color: var(--green); font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 0 0 1.5rem; font: 700 clamp(2.8rem, 6vw, 5rem)/1.05 var(--heading); letter-spacing: -.04em; }
+    h2 { margin: 0 0 1.5rem; font: 700 clamp(2.3rem, 4vw, 3.7rem)/1.05 var(--heading); letter-spacing: -.04em; }
+    em { color: var(--gold); font-style: normal; }
+    p { margin: 0; color: var(--muted); }
+    .hero-text { max-width: 500px; font-size: 1.1rem; }
+    .templates-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 4rem; }
+    .template-card { padding: 2rem; background: white; border: 1px solid var(--border); border-radius: 4px; transition: transform .3s, box-shadow .3s; }
+    .template-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+    .template-card h3 { margin: 1rem 0; font: 700 1.5rem var(--heading); }
+    .template-card p { font-size: .95rem; margin-bottom: 1.5rem; min-height: 60px; }
+    .template-card .button { width: 100%; justify-content: center; }
+    .section { padding: 7rem 0; }
+    .footer { background: var(--ink); color: white; padding: 2rem 0; text-align: center; }
+    .footer p { color: #aebbb2; margin: 0; }
+    @media (max-width: 760px) {
+      .templates-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#top"><span class="logo-mark">T</span> TemplateHub</a>
+      <nav class="site-nav">
+        <a href="#templates">Templates</a>
+        <a href="https://github.com/samsonx3099/small-business-webpage-template" target="_blank">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Choose Your Template</p>
+          <h1>Professional websites<br><em>for your business</em></h1>
+          <p class="hero-text">Three ready-to-customize templates designed for restaurants, retail shops, and tradesman services. Pick one, customize it, and launch your online presence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="templates" class="section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Available Templates</h2>
+        <div class="templates-grid">
+          <div class="template-card">
+            <h3>🍽️ Restaurant</h3>
+            <p>Menu showcase, reservation system, hours, location, and food photography gallery. Perfect for fine dining, casual cafes, and food delivery businesses.</p>
+            <a class="button" href="restaurant/index.html">View Demo →</a>
+          </div>
+          <div class="template-card">
+            <h3>🛍️ Retail</h3>
+            <p>Product showcase, featured items, store locator, online shop integration, and customer testimonials. Ideal for boutiques, gift shops, and general retail.</p>
+            <a class="button" href="retail/index.html">View Demo →</a>
+          </div>
+          <div class="template-card">
+            <h3>🔧 Tradesman</h3>
+            <p>Service offerings, portfolio of completed projects, free quote request, emergency contact, and before/after galleries. Perfect for contractors, plumbers, electricians, and handymen.</p>
+            <a class="button" href="tradesman/index.html">View Demo →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 TemplateHub. All rights reserved. Built with ❤️ for small businesses.</p>
+    </div>
+  </footer>
+</body>
+</html>
